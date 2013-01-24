@@ -1,6 +1,7 @@
 QT += core gui
 
-TARGET = vduablo/bin
+DESTDIR = bin
+
 TEMPLATE = app
 
 OBJECTS_DIR = .obj
@@ -11,5 +12,7 @@ RCC_DIR = .moc
 SOURCES += main.cpp \
 
 include (controller/controller.pri)
+
 include (model/model.pri)
+
 include (view/view.pri)
